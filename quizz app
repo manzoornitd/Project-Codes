@@ -1,0 +1,106 @@
+const st=require('readline-sync');
+console.log("     Wellcome to Math Quizz");
+function f1()
+{
+  console.log("     Calculate the value of 6-3/3");
+  console.log("  options are:");
+  console.log("  1. 0               2. 1");
+  console.log("  3. 5               4. none");
+  let v1;
+  vi=st.question();
+  if(vi==3)
+  {
+    console.log("\nCorrect Answer\n");
+    return 1;
+  }
+  else
+  {
+    console.log("\nWrong answer\n");
+    return 0;
+  }
+}
+
+function f2()
+{
+  console.log("     Calculate the value of 12*12-10");
+  console.log("  options are:");
+  console.log("  1. 114               2. 134");
+  console.log("  3. 24               4. none");
+  let v1;
+  vi=st.question();
+  if(vi==1)
+  {
+    console.log("\nCorrect Answer\n");
+    return 1;
+  }
+  else
+  {
+    console.log("\nWrong answer\n");
+    return 0;
+  }
+}
+  function f3()
+{
+  console.log("     Calculate the value of 65%35");
+  console.log("  options are:");
+  console.log("  1. 30               2. 1");
+  console.log("  3. 25               4. none");
+  let v1;
+  vi=st.question();
+  if(vi==1)
+  {
+    console.log("\nCorrect Answer\n");
+    return 1;
+  }
+  else
+  {
+    console.log("\nWrong answer\n");
+    return 0;
+  }
+}
+function f4()
+{
+  console.log("     Calculate the value of 3-3^2*2");
+  console.log("  options are:");
+  console.log("  1. -15               2. -78");
+  console.log("  3.  5                4. none");
+  let v1;
+  vi=st.question();
+  if(vi==1)
+  {
+    console.log("\nCorrect Answer\n");
+    return 1;
+  }
+  else
+  {
+    console.log("\nWrong answer\n");
+    return 0;
+  }
+}
+function f5()
+{
+  console.log("     Calculate the value of 1+2+3+....+10");
+  console.log("  options are:");
+  console.log("  1. 65               2. 54");
+  console.log("  3. 55               4. none");
+  let v1;
+  vi=st.question();
+  if(vi==3)
+  {
+    console.log("\nCorrect Answer\n");
+    return 1;
+  }
+  else
+  {
+    console.log("\nWrong answer\n");
+    return 0;
+  }
+}
+
+var count=0;
+count=count+f1();
+count=count+f2();
+count=count+f3();
+count=count+f4();
+count=count+f5();
+console.log(`your percentage is ${count*20} %` );
