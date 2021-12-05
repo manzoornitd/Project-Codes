@@ -1,0 +1,65 @@
+
+function length()
+{
+let ar=[1,10,1000,1000000,1540000];
+console.log(`1.MM
+2.CM
+3.Meter
+4.KM
+5.Mile`);
+let x=read.question("\nChoose the Base unit")
+let val=read.question("enter the value\n");
+console.log(`1.MM
+2.CM
+3.Meter
+4.KM
+5.Mile`);
+let tar=read.question("Choose the target\n")
+let ans;
+ans=ar[x-1]*val/ar[tar-1];
+
+console.log(ans);
+
+}
+function weight()
+
+{
+let ar=[1,1000,1000000,453592];
+console.log(`1.Mg
+2.g
+3.KG
+4.Pound`);
+let x=read.question("\nChoose the Base unit\n")
+let val=read.question("enter the value\n");
+console.log(`1.Mg
+2.g
+3.KG
+4.Pound`);
+let tar=read.question("Choose the target\n")
+let ans;
+ans=ar[x-1]*val;
+ans=ans/ar[tar-1];
+console.log(ans);
+
+}
+const read=require('readline-sync');
+
+console.log("Convert your measure\n");
+while(1)
+{
+  
+console.log("select catagory\n");
+console.log("1. length     2. Weight\n");
+let x=read.question();
+if(x==1)
+length();
+else if(x==2)
+weight();
+
+let ch=read.question("Press Y to continue ,N to exit\n");
+if(ch=='Y' || ch=='y')
+continue;
+else 
+break;
+}
+
