@@ -1,0 +1,7 @@
+const read=require('readline-sync');
+let input=read.question("endocding\n");
+let x= encodeURIComponent(input);
+console.log(x);
+x=read.question("Decoding\n");
+x=decodeURIComponent(x);
+console.log(x);
