@@ -1,0 +1,52 @@
+const read = require('readline-sync');
+ let qa=[];
+ let qo=[];
+ let qan=[];
+function abc2 (x)
+{
+  let i,p;
+  p=0;
+  for(i=0;i<x;i++)
+  {
+    qa[i]=read.question("provide the question\n");
+    console.log("provide the options\n");
+    let b=0;
+    while(b<4)
+    {
+      qo[p++]=read.question();
+      b++;
+    }
+  qan[i]=read.question("provide the correct option ");
+  }
+}
+
+
+let x=read.question("enter the number of question");
+abc2(x);
+let level=0;
+while(1)
+{
+  let score =0;
+
+  let i;
+  for(i=0;i<5;i++)
+  {
+    console.log(qa[i+level*5]);
+    console.log(`1. ${qo[i*4]}            2. ${qo[i*4+1]}        `);
+    console.log(`3. ${qo[i*4+2]}          4. ${qo[i*4+3]}`);
+    let ans=read.question("choose the correct option\n");
+    if(ans==qan[i])
+    score++;
+  }
+  console.log(score );
+  level++;
+  if(level==x/5)
+  {
+    console.log("level end");
+    break;
+  }
+  let ch=read.question('type Y for more question , N for end');
+  if(ch=='Y'|| ch=='y')
+  continue;
+  else break;
+} 
